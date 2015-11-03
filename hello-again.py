@@ -3,4 +3,6 @@
 __author__ = 'anna'
 
 print("hello again")
-print("Hello Sergey!")
+print("Hello Masha!")
+print ("Hello all!")
+
