@@ -1,3 +1,4 @@
+#!/usr/bin/python2
 __author__ = 'anna'
 #The improved guess my number
 #The computer pick the number between 1 and 100
