@@ -61,6 +61,12 @@ for i in range(0, 15):
 # pq.insert(6)
 # pq.insert(16)
 # pq.insert(1)
+
+print('length:', getattr(pq, 'length'))
+print('head:', getattr(pq, 'head'))
 print('Dequeue items:')
 while not pq.length == 0:
     print(pq.remove())
+print(getattr(pq, 'length'))
+print(getattr(pq, 'head'))
+
