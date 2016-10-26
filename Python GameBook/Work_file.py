@@ -49,3 +49,5 @@ def digit_sum_recursive(n):
 
 
 print(digit_sum_recursive(45))
+
+print(list(range(10)))
