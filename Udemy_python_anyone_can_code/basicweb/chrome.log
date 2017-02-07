@@ -1,0 +1,586 @@
+[1.000][INFO]: COMMAND InitSession {
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      },
+      "javascriptEnabled": true,
+      "platform": "ANY",
+      "version": ""
+   },
+   "requiredCapabilities": {
+
+   }
+}
+[1.000][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "show_welcome_page": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1.000][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1.001][INFO]: Launching chrome: /opt/google/chrome/google-chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-infobars --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-logging --ignore-certificate-errors --load-extension=/tmp/.org.chromium.Chromium.xMJF8d/internal --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12470 --safebrowsing-disable-auto-update --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/.org.chromium.Chromium.ybXS8Q data:,
+[1.001][DEBUG]: DevTools request: http://localhost:12470/json/version
+[1.072][DEBUG]: DevTools request failed
+[1.122][DEBUG]: DevTools request: http://localhost:12470/json/version
+[1.123][DEBUG]: DevTools request failed
+[1.173][DEBUG]: DevTools request: http://localhost:12470/json/version
+[1.173][DEBUG]: DevTools request failed
+[1.224][DEBUG]: DevTools request: http://localhost:12470/json/version
+[1.298][DEBUG]: DevTools response: {
+   "Browser": "Chrome/55.0.2883.87",
+   "Protocol-Version": "1.2",
+   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36",
+   "WebKit-Version": "537.36 (@ad0be09aa3ca814168d079b52825f6f80e22f0e8)"
+}
+
+[1.298][DEBUG]: DevTools request: http://localhost:12470/json
+[1.379][DEBUG]: DevTools response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:12470/devtools/page/80a5a90c-df37-4a3d-a2c2-8694dff4c8a3",
+   "id": "80a5a90c-df37-4a3d-a2c2-8694dff4c8a3",
+   "title": "chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html",
+   "type": "other",
+   "url": "chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:12470/devtools/page/80a5a90c-df37-4a3d-a2c2-8694dff4c8a3"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:12470/devtools/page/06b65b71-4bc6-43df-b4eb-cbffdb2a1776",
+   "id": "06b65b71-4bc6-43df-b4eb-cbffdb2a1776",
+   "title": "data:,",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:12470/devtools/page/06b65b71-4bc6-43df-b4eb-cbffdb2a1776"
+} ]
+
+[1.379][DEBUG]: DevTools request: http://localhost:12470/json
+[1.395][DEBUG]: DevTools response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:12470/devtools/page/80a5a90c-df37-4a3d-a2c2-8694dff4c8a3",
+   "id": "80a5a90c-df37-4a3d-a2c2-8694dff4c8a3",
+   "title": "chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html",
+   "type": "other",
+   "url": "chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:12470/devtools/page/80a5a90c-df37-4a3d-a2c2-8694dff4c8a3"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:12470/devtools/page/06b65b71-4bc6-43df-b4eb-cbffdb2a1776",
+   "id": "06b65b71-4bc6-43df-b4eb-cbffdb2a1776",
+   "title": "data:,",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:12470/devtools/page/06b65b71-4bc6-43df-b4eb-cbffdb2a1776"
+} ]
+
+[1.396][INFO]: resolved localhost to ["127.0.0.1"]
+[1.404][DEBUG]: DEVTOOLS COMMAND Log.enable (id=1) {
+
+}
+[1.404][DEBUG]: DEVTOOLS COMMAND DOM.getDocument (id=2) {
+
+}
+[1.404][DEBUG]: DEVTOOLS COMMAND Runtime.enable (id=3) {
+
+}
+[1.404][DEBUG]: DEVTOOLS COMMAND Page.enable (id=4) {
+
+}
+[1.404][DEBUG]: DEVTOOLS COMMAND Page.enable (id=5) {
+
+}
+[1.425][DEBUG]: DEVTOOLS RESPONSE Log.enable (id=1) {
+
+}
+[1.425][DEBUG]: DEVTOOLS RESPONSE DOM.getDocument (id=2) {
+   "root": {
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "children": [ {
+         "attributes": [  ],
+         "childNodeCount": 2,
+         "children": [ {
+            "attributes": [  ],
+            "childNodeCount": 0,
+            "localName": "head",
+            "nodeId": 3,
+            "nodeName": "HEAD",
+            "nodeType": 1,
+            "nodeValue": ""
+         }, {
+            "attributes": [  ],
+            "childNodeCount": 1,
+            "localName": "body",
+            "nodeId": 4,
+            "nodeName": "BODY",
+            "nodeType": 1,
+            "nodeValue": ""
+         } ],
+         "frameId": "5544.1",
+         "localName": "html",
+         "nodeId": 2,
+         "nodeName": "HTML",
+         "nodeType": 1,
+         "nodeValue": ""
+      } ],
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 1,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1.426][DEBUG]: DEVTOOLS EVENT Runtime.executionContextCreated {
+   "context": {
+      "auxData": {
+         "frameId": "5544.1",
+         "isDefault": true
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://"
+   }
+}
+[1.427][DEBUG]: DEVTOOLS RESPONSE Runtime.enable (id=3) {
+
+}
+[1.427][DEBUG]: DEVTOOLS RESPONSE Page.enable (id=4) {
+
+}
+[1.427][DEBUG]: DEVTOOLS RESPONSE Page.enable (id=5) {
+
+}
+[1.427][DEBUG]: DEVTOOLS COMMAND Page.enable (id=6) {
+
+}
+[1.430][DEBUG]: DEVTOOLS RESPONSE Page.enable (id=6) {
+
+}
+[1.430][DEBUG]: DEVTOOLS COMMAND Runtime.enable (id=7) {
+
+}
+[1.431][DEBUG]: DEVTOOLS RESPONSE Runtime.enable (id=7) {
+
+}
+[1.431][DEBUG]: DEVTOOLS COMMAND Runtime.evaluate (id=8) {
+   "expression": "(function() { // Copyright (c) 2012 The Chromium Authors. All rights reserved.\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum f...",
+   "returnByValue": true
+}
+[1.440][DEBUG]: DEVTOOLS RESPONSE Runtime.evaluate (id=8) {
+   "result": {
+      "type": "object",
+      "value": {
+         "status": 0,
+         "value": 1
+      }
+   }
+}
+[1.441][INFO]: RESPONSE InitSession {
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "2.27.440175 (9bc1d90b8bfa4dd181fbbf769a5eb5e575574320)",
+      "userDataDir": "/tmp/.org.chromium.Chromium.ybXS8Q"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Linux",
+   "rotatable": false,
+   "takesHeapSnapshot": true,
+   "takesScreenshot": true,
+   "~~~": "..."
+}
+[1.443][INFO]: COMMAND Navigate {
+   "sessionId": "e82d488f37c480d4f8d3e45ce1742122",
+   "url": "http://www.google.com"
+}
+[1.443][INFO]: Waiting for pending navigations...
+[1.443][DEBUG]: DEVTOOLS COMMAND Runtime.evaluate (id=9) {
+   "expression": "1"
+}
+[1.445][DEBUG]: DEVTOOLS RESPONSE Runtime.evaluate (id=9) {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1.446][DEBUG]: DEVTOOLS COMMAND DOM.getDocument (id=10) {
+
+}
+[1.449][DEBUG]: DEVTOOLS RESPONSE DOM.getDocument (id=10) {
+   "root": {
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "children": [ {
+         "attributes": [  ],
+         "childNodeCount": 2,
+         "children": [ {
+            "attributes": [  ],
+            "childNodeCount": 0,
+            "localName": "head",
+            "nodeId": 7,
+            "nodeName": "HEAD",
+            "nodeType": 1,
+            "nodeValue": ""
+         }, {
+            "attributes": [  ],
+            "childNodeCount": 1,
+            "localName": "body",
+            "nodeId": 8,
+            "nodeName": "BODY",
+            "nodeType": 1,
+            "nodeValue": ""
+         } ],
+         "frameId": "5544.1",
+         "localName": "html",
+         "nodeId": 6,
+         "nodeName": "HTML",
+         "nodeType": 1,
+         "nodeValue": ""
+      } ],
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 5,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1.449][DEBUG]: DEVTOOLS COMMAND Runtime.evaluate (id=11) {
+   "expression": "var isLoaded = document.readyState == 'complete' ||    document.readyState == 'interactive';if (isLoaded) {  var frame = document.createElement('iframe');  frame.name = 'chromedriver dummy frame'; ..."
+}
+[1.470][DEBUG]: DEVTOOLS EVENT DOM.childNodeCountUpdated {
+   "childNodeCount": 2,
+   "nodeId": 8
+}
+[1.471][DEBUG]: DEVTOOLS EVENT Page.frameAttached {
+   "frameId": "5544.2",
+   "parentFrameId": "5544.1"
+}
+[1.471][DEBUG]: DEVTOOLS EVENT Page.frameStartedLoading {
+   "frameId": "5544.2"
+}
+[1.471][DEBUG]: DEVTOOLS EVENT Page.frameNavigated {
+   "frame": {
+      "id": "5544.2",
+      "loaderId": "5544.1",
+      "mimeType": "text/html",
+      "name": "chromedriver dummy frame",
+      "parentId": "5544.1",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   }
+}
+[1.471][DEBUG]: DEVTOOLS EVENT Runtime.executionContextCreated {
+   "context": {
+      "auxData": {
+         "frameId": "5544.2",
+         "isDefault": true
+      },
+      "id": 2,
+      "name": "",
+      "origin": "://"
+   }
+}
+[1.471][DEBUG]: DEVTOOLS EVENT Page.frameStoppedLoading {
+   "frameId": "5544.2"
+}
+[1.471][DEBUG]: DEVTOOLS RESPONSE Runtime.evaluate (id=11) {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1.471][INFO]: Done waiting for pending navigations. Status: ok
+[1.471][DEBUG]: DEVTOOLS COMMAND Page.navigate (id=12) {
+   "url": "http://www.google.com"
+}
+[1.801][DEBUG]: DEVTOOLS EVENT Runtime.executionContextsCleared {
+
+}
+[1.801][DEBUG]: DEVTOOLS RESPONSE Page.navigate (id=12) {
+   "frameId": "5566.1"
+}
+[1.801][INFO]: Waiting for pending navigations...
+[1.801][DEBUG]: DEVTOOLS COMMAND Runtime.evaluate (id=13) {
+   "expression": "1"
+}
+[1.802][DEBUG]: DEVTOOLS EVENT Page.frameStartedLoading {
+   "frameId": "5566.1"
+}
+[1.843][DEBUG]: DEVTOOLS EVENT Runtime.executionContextsCleared {
+
+}
+[1.843][DEBUG]: DEVTOOLS EVENT DOM.documentUpdated {
+
+}
+[1.844][DEBUG]: DEVTOOLS COMMAND DOM.getDocument (id=14) {
+
+}
+[1.844][DEBUG]: DEVTOOLS EVENT Page.frameNavigated {
+   "frame": {
+      "id": "5566.1",
+      "loaderId": "5566.1",
+      "mimeType": "text/html",
+      "securityOrigin": "https://www.google.com",
+      "url": "https://www.google.com/?gws_rd=ssl"
+   }
+}
+[1.844][DEBUG]: DEVTOOLS EVENT Runtime.executionContextCreated {
+   "context": {
+      "auxData": {
+         "frameId": "5566.1",
+         "isDefault": true
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.google.com"
+   }
+}
+[1.864][DEBUG]: DEVTOOLS RESPONSE Runtime.evaluate (id=13) {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1.870][DEBUG]: DEVTOOLS RESPONSE DOM.getDocument (id=14) {
+   "root": {
+      "baseURL": "https://www.google.com/?gws_rd=ssl",
+      "childNodeCount": 2,
+      "children": [ {
+         "localName": "",
+         "nodeId": 2,
+         "nodeName": "html",
+         "nodeType": 10,
+         "nodeValue": "",
+         "publicId": "",
+         "systemId": ""
+      }, {
+         "attributes": [ "itemscope", "", "itemtype", "http://schema.org/WebPage", "lang", "en" ],
+         "childNodeCount": 1,
+         "children": [ {
+            "attributes": [  ],
+            "childNodeCount": 13,
+            "localName": "head",
+            "nodeId": 4,
+            "nodeName": "HEAD",
+            "nodeType": 1,
+            "nodeValue": ""
+         } ],
+         "frameId": "5566.1",
+         "localName": "html",
+         "nodeId": 3,
+         "nodeName": "HTML",
+         "nodeType": 1,
+         "nodeValue": ""
+      } ],
+      "documentURL": "https://www.google.com/?gws_rd=ssl",
+      "localName": "",
+      "nodeId": 1,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1.988][DEBUG]: DEVTOOLS EVENT DOM.childNodeCountUpdated {
+   "childNodeCount": 14,
+   "nodeId": 4
+}
+[1.988][DEBUG]: DEVTOOLS COMMAND Runtime.evaluate (id=15) {
+   "expression": "1"
+}
+[1.989][DEBUG]: DEVTOOLS EVENT DOM.childNodeCountUpdated {
+   "childNodeCount": 15,
+   "nodeId": 4
+}
+[1.989][DEBUG]: DEVTOOLS EVENT DOM.childNodeCountUpdated {
+   "childNodeCount": 16,
+   "nodeId": 4
+}
+[1.989][DEBUG]: DEVTOOLS EVENT DOM.childNodeCountUpdated {
+   "childNodeCount": 17,
+   "nodeId": 4
+}
+[1.989][DEBUG]: DEVTOOLS EVENT DOM.childNodeCountUpdated {
+   "childNodeCount": 18,
+   "nodeId": 4
+}
+[1.989][DEBUG]: DEVTOOLS EVENT DOM.childNodeInserted {
+   "node": {
+      "attributes": [ "class", "hp vasq", "onload", "try{if(!google.j.b){document.f&&document.f.q.focus();document.gbqf&&document.gbqf.q.focus();}}catch(e){}if(document.images)new Image().src='/images/nav_logo242.png'", "id", "gsr" ],
+      "childNodeCount": 0,
+      "localName": "body",
+      "nodeId": 5,
+      "nodeName": "BODY",
+      "nodeType": 1,
+      "nodeValue": ""
+   },
+   "parentNodeId": 3,
+   "previousNodeId": 4
+}
+[1.989][DEBUG]: DEVTOOLS EVENT DOM.childNodeCountUpdated {
+   "childNodeCount": 1,
+   "nodeId": 5
+}
+[2.018][DEBUG]: DEVTOOLS RESPONSE Runtime.evaluate (id=15) {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[2.178][DEBUG]: DEVTOOLS EVENT Page.loadEventFired {
+   "timestamp": 169120.443649
+}
+[2.178][DEBUG]: DEVTOOLS COMMAND Runtime.evaluate (id=16) {
+   "expression": "1"
+}
+[2.178][DEBUG]: DEVTOOLS EVENT Page.frameStoppedLoading {
+   "frameId": "5566.1"
+}
+[2.178][DEBUG]: DEVTOOLS EVENT DOM.documentUpdated {
+
+}
+[2.178][DEBUG]: DEVTOOLS COMMAND DOM.getDocument (id=17) {
+
+}
+[2.178][DEBUG]: DEVTOOLS EVENT Page.domContentEventFired {
+   "timestamp": 169120.444464
+}
+[2.197][DEBUG]: DEVTOOLS RESPONSE Runtime.evaluate (id=16) {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[2.197][DEBUG]: DEVTOOLS RESPONSE DOM.getDocument (id=17) {
+   "root": {
+      "baseURL": "https://www.google.com/?gws_rd=ssl",
+      "childNodeCount": 2,
+      "children": [ {
+         "localName": "",
+         "nodeId": 7,
+         "nodeName": "html",
+         "nodeType": 10,
+         "nodeValue": "",
+         "publicId": "",
+         "systemId": ""
+      }, {
+         "attributes": [ "itemscope", "", "itemtype", "http://schema.org/WebPage", "lang", "en" ],
+         "childNodeCount": 2,
+         "children": [ {
+            "attributes": [  ],
+            "childNodeCount": 18,
+            "localName": "head",
+            "nodeId": 9,
+            "nodeName": "HEAD",
+            "nodeType": 1,
+            "nodeValue": ""
+         }, {
+            "attributes": [ "class", "hp vasq", "onload", "try{if(!google.j.b){document.f&&document.f.q.focus();document.gbqf&&document.gbqf.q.focus();}}catch(e){}if(document.images)new Image().src='/images/nav_logo242.png'", "id", "gsr" ],
+            "childNodeCount": 1,
+            "localName": "body",
+            "nodeId": 10,
+            "nodeName": "BODY",
+            "nodeType": 1,
+            "nodeValue": ""
+         } ],
+         "frameId": "5566.1",
+         "localName": "html",
+         "nodeId": 8,
+         "nodeName": "HTML",
+         "nodeType": 1,
+         "nodeValue": ""
+      } ],
+      "documentURL": "https://www.google.com/?gws_rd=ssl",
+      "localName": "",
+      "nodeId": 6,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[2.198][INFO]: Done waiting for pending navigations. Status: ok
+[2.198][INFO]: RESPONSE Navigate
+[17.220][INFO]: COMMAND QuitAll {
+
+}
+[17.270][INFO]: RESPONSE QuitAll
+[17.270][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[17.270][DEBUG]: Log type 'browser' lost 0 entries on destruction

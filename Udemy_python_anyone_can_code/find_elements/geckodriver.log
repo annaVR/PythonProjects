@@ -1,0 +1,164 @@
+1485900032281	geckodriver	INFO	Listening on 127.0.0.1:42055
+1485900033257	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.wO1LJHqvFTMV
+1485900033258	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1485900033260	geckodriver::marionette	INFO	Connecting to Marionette on localhost:42899
+1485900033903	Marionette	INFO	Listening on port 42899
+1485900616881	geckodriver	INFO	Listening on 127.0.0.1:59341
+1485900617879	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.W2vaUkTT1Hn4
+1485900617880	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1485900617884	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38799
+1485900618523	Marionette	INFO	Listening on port 38799
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1485977924069	geckodriver	INFO	Listening on 127.0.0.1:45496
+1485977924969	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.M4ekWLq2SrNu
+1485977924970	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1485977924971	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37607
+1485977925784	Marionette	INFO	Listening on port 37607
+1485978522472	geckodriver	INFO	Listening on 127.0.0.1:41984
+1485978523459	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.Szu48tAcMixA
+1485978523462	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1485978523465	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37598
+1485978524151	Marionette	INFO	Listening on port 37598
+1485978561747	geckodriver	INFO	Listening on 127.0.0.1:53179
+1485978562749	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.XW71knpBhIDY
+1485978562749	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1485978562751	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38790
+1485978563399	Marionette	INFO	Listening on port 38790
+1485979440655	geckodriver	INFO	Listening on 127.0.0.1:39449
+1485979441606	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.qtO0gbjjU4HL
+1485979441607	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1485979441609	geckodriver::marionette	INFO	Connecting to Marionette on localhost:34921
+1485979442337	Marionette	INFO	Listening on port 34921
+1486143404622	geckodriver	INFO	Listening on 127.0.0.1:37909
+1486143405613	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.7wZGBnud23u9
+1486143405614	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486143405616	geckodriver::marionette	INFO	Connecting to Marionette on localhost:42260
+1486143406588	Marionette	INFO	Listening on port 42260
+1486143507113	geckodriver	INFO	Listening on 127.0.0.1:42108
+1486143508036	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.xPp0UqTWQsNZ
+1486143508037	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486143508039	geckodriver::marionette	INFO	Connecting to Marionette on localhost:46060
+1486143509091	Marionette	INFO	Listening on port 46060
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1486146532026	geckodriver	INFO	Listening on 127.0.0.1:36954
+1486146533028	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.hoWbA2kGPNIO
+1486146533029	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486146533032	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43812
+1486146533971	Marionette	INFO	Listening on port 43812
+1486146660106	geckodriver	INFO	Listening on 127.0.0.1:55820
+1486146661109	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.nuJrnu0grNsA
+1486146661111	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486146661112	geckodriver::marionette	INFO	Connecting to Marionette on localhost:36351
+1486146661756	Marionette	INFO	Listening on port 36351
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4A00C3,name=PContent::Msg_ConsoleMessage) Channel closing: too late to send/recv, messages will be lost
+
+[Child 14583] ###!!! ABORT: Aborting on channel error.: file /build/firefox-RuETGa/firefox-51.0.1+build2/ipc/glue/MessageChannel.cpp, line 2056
+[Child 14583] ###!!! ABORT: Aborting on channel error.: file /build/firefox-RuETGa/firefox-51.0.1+build2/ipc/glue/MessageChannel.cpp, line 2056
+1486153365036	geckodriver	INFO	Listening on 127.0.0.1:57416
+1486153365062	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.wSIEfBj6Xj0K
+1486153365063	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486153365084	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40139
+1486153366085	Marionette	INFO	Listening on port 40139
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x500001,name=PCrashReporter::Msg_AnnotateCrashReport) Channel error: cannot send/recv
+
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Receive IPC close with reason=AbnormalShutdown (t=2.56689) 
+###!!! [Child][MessageChannel] Error: (msgtype=0x4A00EA,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1486153379860	geckodriver	INFO	Listening on 127.0.0.1:33963
+1486153380857	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.tO2GhjG73yk5
+1486153380858	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486153380860	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43800
+1486153381540	Marionette	INFO	Listening on port 43800
+1486153489825	geckodriver	INFO	Listening on 127.0.0.1:38846
+1486153490826	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.YkHpdYClNxwu
+1486153490827	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486153490828	geckodriver::marionette	INFO	Connecting to Marionette on localhost:33854
+1486153491494	Marionette	INFO	Listening on port 33854
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1486154644602	geckodriver	INFO	Listening on 127.0.0.1:37690
+1486154645604	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.cKLnAT4RPJjt
+1486154645604	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486154645605	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37749
+1486154646335	Marionette	INFO	Listening on port 37749
+1486154719306	geckodriver	INFO	Listening on 127.0.0.1:43592
+1486154720306	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.YvunJAKEL5g3
+1486154720308	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486154720311	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35284
+1486154721014	Marionette	INFO	Listening on port 35284
+1486154760598	geckodriver	INFO	Listening on 127.0.0.1:52217
+1486154761464	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.kVnQ0YbiKtX4
+1486154761465	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486154761466	geckodriver::marionette	INFO	Connecting to Marionette on localhost:42222
+1486154762245	Marionette	INFO	Listening on port 42222
+1486154805475	geckodriver	INFO	Listening on 127.0.0.1:38702
+1486154806476	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.HsLXz96QQSAM
+1486154806477	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486154806478	geckodriver::marionette	INFO	Connecting to Marionette on localhost:42407
+1486154807179	Marionette	INFO	Listening on port 42407
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1486155369245	geckodriver	INFO	Listening on 127.0.0.1:49867
+1486155370246	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.oa6sidW2poB0
+1486155370248	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486155370251	geckodriver::marionette	INFO	Connecting to Marionette on localhost:46289
+1486155371094	Marionette	INFO	Listening on port 46289
+1486155406831	geckodriver	INFO	Listening on 127.0.0.1:39783
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1486155407806	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.SlbnHQYya8tn
+1486155407807	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486155407835	geckodriver::marionette	INFO	Connecting to Marionette on localhost:42738
+1486155408550	Marionette	INFO	Listening on port 42738
+1486155690920	geckodriver	INFO	Listening on 127.0.0.1:48085
+1486155691853	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.J9808I1zRUiz
+1486155691853	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486155691854	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35683
+1486155692728	Marionette	INFO	Listening on port 35683
+1486156162643	geckodriver	INFO	Listening on 127.0.0.1:49421
+1486156163584	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.55DKCGAg2yR2
+1486156163586	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486156163588	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40744
+1486156164461	Marionette	INFO	Listening on port 40744
+1486156233893	geckodriver	INFO	Listening on 127.0.0.1:46436
+1486156234894	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.1RaG97h9O1sJ
+1486156234895	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1486156234896	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35610
+1486156235596	Marionette	INFO	Listening on port 35610
