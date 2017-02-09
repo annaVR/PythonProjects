@@ -13,7 +13,7 @@ print(list(map(lambda x: x + 2, s)))
 s_2 = 'lambda'
 print(s_2[::-1])
 
-=======
+#=======
 n, l = int(input().strip()), list(map(int, input().strip().split()))
 print(all([all(elem > 0 for elem in l), any(map(lambda x: str(x) == str(x)[::-1], l))]))
 
