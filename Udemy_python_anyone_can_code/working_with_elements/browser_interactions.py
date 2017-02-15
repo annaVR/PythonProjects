@@ -20,7 +20,7 @@ class BrowserInteractions(object):
         print('Refresh for the second time:')
         driver.get(driver.current_url)
 
-        driver.page_source
+        print(driver.page_source)
 
         driver.get('http://www.thegeekstuff.com/2010/08/bash-shell-builtin-commands/')
 
@@ -28,7 +28,7 @@ class BrowserInteractions(object):
 
         driver.forward()
 
-        driver.close()
+        #driver.close()
 
         driver.quit()
 

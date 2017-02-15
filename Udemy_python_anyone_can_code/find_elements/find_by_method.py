@@ -15,6 +15,10 @@ class BYDemo(object):
         driver.get(url)
 
         element_by_id = driver.find_element(By.ID, 'carselect')
+        print('Attribute:')
+        print(element_by_id.get_attribute('id'))
+
+
         if element_by_id:
             print('Element by ID: {}'.format(element_by_id.text))
 
@@ -31,6 +35,8 @@ class BYDemo(object):
         print(len(span_elements))
         for elem in span_elements:
             print(elem.text)
+
+        driver.quit()
 
 ff = BYDemo()
 ff.test()
