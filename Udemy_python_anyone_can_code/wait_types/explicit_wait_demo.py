@@ -21,10 +21,10 @@ class ExplictWaitDemo():
         driver.implicitly_wait(4)
 
         driver.find_element(By.ID, "tab-flight-tab").click()
-        driver.find_element(By.ID, "flight-origin").send_keys("SFO")
-        driver.find_element(By.ID, 'flight-origin').send_keys(Keys.RETURN)
-        driver.find_element(By.ID, "flight-destination").send_keys("NYC")
-        driver.find_element(By.ID, 'flight-destination').send_keys(Keys.RETURN)
+        driver.find_element(By.ID, "flight-origin-hp-flight").send_keys("SFO")
+        driver.find_element(By.ID, 'flight-origin-hp-flight').send_keys(Keys.RETURN)
+        driver.find_element(By.ID, "flight-destination-hp-flight").send_keys("NYC")
+        driver.find_element(By.ID, 'flight-destination-hp-flight').send_keys(Keys.RETURN)
 
         driver.find_element(By.ID, "flight-departing").click()
         driver.find_element(By.XPATH,
@@ -34,6 +34,7 @@ class ExplictWaitDemo():
         return_date = driver.find_element(By.ID, "flight-returning").click()
         driver.find_element(By.XPATH,
                             "//caption[contains(text(),'FEB 2017')]/parent::table//button[contains(text(), '27')]").click()
+
         time.sleep(3)
         #another test for the car tab
         # driver.find_element(By.ID, "tab-car-tab").click()
@@ -65,6 +66,11 @@ class ExplictWaitDemo():
         element = wait.until(EC.element_to_be_clickable((By.ID, 'stopFilter_stops-0')))
         time.sleep(2)
         element.click()
+        time.sleep(2)
+        print('Just some exercise in XPath:')
+        month_calendar = driver.find_element(By.XPath, "//caption[contains(text(), 'FEB 2017')]/parent::table")
+        calendar_days = month_calendar.find_elements(By.XPATH, "//button[not(contains(@class, 'disabled'))]")
+        print('The number or days: {}'.format(len(calendar_days)))
         time.sleep(2)
         driver.quit()
 
