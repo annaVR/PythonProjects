@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from wrappers import Wrappers
 import time
 
-sys.path.insert(0, 'users/anna/PycharmProjects/PythonProjects/Udemy_python_anyone_can_code/tools)')
+sys.path.insert(0, '/home/anna/PycharmProjects/PythonProjects/Udemy_python_anyone_can_code/tools')
 
 class ElementPresentCheck():
 
