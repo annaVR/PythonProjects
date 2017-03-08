@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Enter data in the fields below:</h1>
+    <form action="" method="post" name="input">
+    {{ form.hidden_tag() }}
+    <p>
+        Please enter data below:<br>
+        {{form.string_data(size=31, maxlength=30)}}
+        {% for error in form.string_data.errors %}
+          <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}<br>
+    </p>
+    <p><input type="submit" value="Calculate"></p>
+    </form>
+{% endblock %}
