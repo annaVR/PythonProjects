@@ -3,7 +3,6 @@ __author__ = 'anna'
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-import random
 
 def switch_to_frame():
     driver = webdriver.Firefox()
@@ -20,6 +19,7 @@ def switch_to_frame():
     driver.find_element(By.ID, "search-course-button").click()
     time.sleep(3)
 
+    # switch back to Top window
     driver.switch_to.default_content()
     driver.execute_script('window.scrollBy(0, -2000)')
     time.sleep(2)
