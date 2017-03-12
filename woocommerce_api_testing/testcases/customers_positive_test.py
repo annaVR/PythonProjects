@@ -1,9 +1,9 @@
 import sys
-sys.path.insert(0, '/home/anna/PycharmProjects/PythonProjects/woocommerce_api_testing')
+#sys.path.insert(0, '/home/anna/PycharmProjects/PythonProjects/woocommerce_api_testing')
 
 import json
-from tools import request
-from tools import helpers
+from ..tools import request
+from ..tools import helpers
 
 
 rq = request.Request()

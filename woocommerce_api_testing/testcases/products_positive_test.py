@@ -1,8 +1,8 @@
-import sys
-sys.path.insert(0, '/home/anna/PycharmProjects/PythonProjects/woocommerce_api_testing')
+# import sys
+# sys.path.insert(0, '/home/anna/PycharmProjects/PythonProjects/woocommerce_api_testing')
 
-from tools import dbconnect
-from tools import request
+from ..tools import dbconnect
+from ..tools import request
 import json
 req = request.Request()
 qry = dbconnect.DBConnect()

@@ -1,10 +1,10 @@
-import sys
-sys.path.insert(0, '/home/anna/PycharmProjects/PythonProjects/woocommerce_api_testing')
+# import sys
+# sys.path.insert(0, '/home/anna/PycharmProjects/PythonProjects/woocommerce_api_testing')
 
 from datetime import datetime
 import string
 import random
-from tools import dbconnect
+from ..tools import dbconnect
 
 class Helper():
 
