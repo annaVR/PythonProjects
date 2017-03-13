@@ -1,1 +1,2 @@
-pip3 install pytest pytest-ordering
+pip3 install pytest pytest-ordering pytest-html
+
