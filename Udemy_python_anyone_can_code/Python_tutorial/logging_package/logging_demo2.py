@@ -1,10 +1,7 @@
 __author__ = 'anna'
 
-import sys
-sys.path.insert(0, '/home/anna/PycharmProjects/PythonProjects/Udemy_python_anyone_can_code/logging_package')
-
 import logging
-import custom_logger as cl
+from . import custom_logger as cl
 
 class LoggingDemo2():
 
