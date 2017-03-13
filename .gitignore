@@ -3,5 +3,6 @@
 *.pyc
 *~
 .idea/*
-.Udemy_python_anyone_can_code/pytest_package/.cache/*
+.cache/*
 *report*.html
+assets/*
