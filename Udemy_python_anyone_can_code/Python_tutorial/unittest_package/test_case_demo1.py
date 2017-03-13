@@ -1,7 +1,8 @@
 __author__ = 'anna'
 import unittest
 
-class TestCaseDemo(unittest.TestCase):
+
+class TestCaseDemo1(unittest.TestCase):
 
     def setUp(self):
         print('run once before every test')

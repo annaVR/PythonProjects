@@ -42,7 +42,7 @@ def switch_to_window_random():
     parent_handle = driver.current_window_handle
     print(parent_handle)
 
-    courses = ['Python', 'Java', 'JavaScript', 'Linux']
+    courses = ['Python_tutorial', 'Java', 'JavaScript', 'Linux']
 
     for _ in range(3):
         driver.find_element(By.ID, 'openwindow').click()

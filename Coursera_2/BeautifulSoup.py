@@ -693,7 +693,7 @@ class Tag(PageElement):
         """Returns a string or Unicode representation of this tag and
         its contents. To get Unicode, pass None for encoding.
 
-        NOTE: since Python's HTML parser consumes whitespace, this
+        NOTE: since Python_tutorial's HTML parser consumes whitespace, this
         method is not certain to reproduce the whitespace present in
         the original string."""
 
@@ -1145,7 +1145,7 @@ class BeautifulStoneSoup(Tag, SGMLParser):
         self.markup = None                 # The markup can now be GCed
 
     def convert_charref(self, name):
-        """This method fixes a bug in Python's SGMLParser."""
+        """This method fixes a bug in Python_tutorial's SGMLParser."""
         try:
             n = int(name)
         except ValueError:
@@ -1175,7 +1175,7 @@ class BeautifulStoneSoup(Tag, SGMLParser):
                     markup = fix.sub(m, markup)
                 # TODO: We get rid of markupMassage so that the
                 # soup object can be deepcopied later on. Some
-                # Python installations can't copy regexes. If anyone
+                # Python_tutorial installations can't copy regexes. If anyone
                 # was relying on the existence of markupMassage, this
                 # might cause problems.
                 del(self.markupMassage)
@@ -1736,9 +1736,9 @@ try:
 except ImportError:
     chardet = None
 
-# cjkcodecs and iconv_codec make Python know about more character encodings.
+# cjkcodecs and iconv_codec make Python_tutorial know about more character encodings.
 # Both are available from http://cjkpython.i18n.org/
-# They're built in if you use Python 2.4.
+# They're built in if you use Python_tutorial 2.4.
 try:
     import cjkcodecs.aliases
 except ImportError:
@@ -1755,8 +1755,8 @@ class UnicodeDammit:
     equivalents."""
 
     # This dictionary maps commonly seen values for "charset" in HTML
-    # meta tags to the corresponding Python codec names. It only covers
-    # values that aren't in Python's aliases and can't be determined
+    # meta tags to the corresponding Python_tutorial codec names. It only covers
+    # values that aren't in Python_tutorial's aliases and can't be determined
     # by the heuristics in find_codec.
     CHARSET_ALIASES = { "macintosh" : "mac-roman",
                         "x-sjis" : "shift-jis" }

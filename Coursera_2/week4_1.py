@@ -1,5 +1,5 @@
 __author__ = 'anna'
-# Note - this code must run in Python 2.x and you must download
+# Note - this code must run in Python_tutorial 2.x and you must download
 # http://www.pythonlearn.com/code/BeautifulSoup.py
 # Into the same folder as this program
 

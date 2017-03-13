@@ -8,7 +8,7 @@ import ssl
 # serviceurl = "http://maps.google.cn/maps/api/geocode/json?"
 serviceurl = "http://maps.googleapis.com/maps/api/geocode/json?"
 
-# Deal with SSL certificate anomalies Python > 2.7
+# Deal with SSL certificate anomalies Python_tutorial > 2.7
 # scontext = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
 scontext = None
 

@@ -4,7 +4,7 @@ __author__ = 'anna'
 You should use an iterative approach - meaning
 using loops.
 Your function should take two inputs:
-a Python list to search through, and the value
+a Python_tutorial list to search through, and the value
 you're searching for.
 Assume the list only has distinct elements,
 meaning there are no repeated values, and
