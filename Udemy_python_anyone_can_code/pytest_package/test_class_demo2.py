@@ -8,7 +8,7 @@ from .class_to_test import SomeClassToTest
 class TestClassDemo2():
 
     #create class_level fixture to prepare to run all tests: here to make an instance of a class we are testing and
-    #maka it available to every method
+    #make it available to every method
     @pytest.fixture(autouse=True)
     def ClassSetup(self, module_set_up_level_to_test_a_class):
         self.abc = SomeClassToTest(self.value)

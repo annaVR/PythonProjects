@@ -7,7 +7,7 @@ import time
 class RunChromeTests(object):
 
     def test(self):
-        driver_location = '/Users/anna/bin/chromedriver'
+        driver_location = '/home/anna/bin/chromedriver'
         os.environ['webdriver.chrome.driver'] = driver_location
 
         driver = webdriver.Chrome(driver_location)
