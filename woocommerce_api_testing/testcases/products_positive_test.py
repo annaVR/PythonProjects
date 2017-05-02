@@ -1,8 +1,8 @@
-# import sys
-# sys.path.insert(0, '/home/anna/PycharmProjects/PythonProjects/woocommerce_api_testing')
+import sys
+sys.path.insert(0, '/home/anna/PycharmProjects/PythonProjects/woocommerce_api_testing')
 
-from ..tools import dbconnect
-from ..tools import request
+from tools import dbconnect
+from tools import request
 import json
 req = request.Request()
 qry = dbconnect.DBConnect()
@@ -81,5 +81,3 @@ def test_verity_product_created_in_db():
 
     print('Product positive tc, verify product created in db, PASS')
 
-test_create_a_product()
-test_verity_product_created_in_db()

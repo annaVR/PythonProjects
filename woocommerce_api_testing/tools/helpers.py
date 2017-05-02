@@ -1,10 +1,10 @@
-# import sys
-# sys.path.insert(0, '/home/anna/PycharmProjects/PythonProjects/woocommerce_api_testing')
+import sys
+sys.path.insert(0, '/home/anna/PycharmProjects/PythonProjects/woocommerce_api_testing')
 
 from datetime import datetime
 import string
 import random
-from ..tools import dbconnect
+from tools import dbconnect
 
 class Helper():
 
@@ -28,6 +28,31 @@ class Helper():
         customer_info['last_name'] = ''.join(random.sample(all_letters, 8)).capitalize()
         return customer_info
 
+    def generate_coupon_info(self):
+        '''
+        This helper will generate random coupon info
+        :return: code, discount_type, amount, minimum_amount
+        '''
+
+        
+        amount = str(random.randrange(5, 95, 5))
+        code = amount + 'off'
+        # discount_type = 'percent'
+
+
+        individual_use = True
+        exclude_sale_items = True
+        minimum_amount = str(float(random.randrange(50, 150, 10)))
+        coupon_info = [code, amount, individual_use, exclude_sale_items, minimum_amount]
+        # coupon_info['code'] = code
+        # coupon_info['discount_type'] = discount_type
+        # coupon_info['amount'] = amount
+        # coupon_info['individual_use'] = True
+        # coupon_info['exclude_sale_items'] = True
+        # coupon_info['minimum_amount'] = minimum_amount
+
+
+        return coupon_info
 
     def get_customer_info_from_db_id_provided(self, customer_id):
 
@@ -50,4 +75,22 @@ class Helper():
             customer_info[row[0]] = row[1]
 
         return(customer_info)
+
+    def get_coupon_codes_from_db(self):
+        '''
+
+        :return: the list of coupon codes existing in db
+        '''
+
+        query = "select post_name from wp179.ms_posts where post_type='shop_coupon'"
+        coupon_codes = self.qrq.select('wp179', query)
+        coupon_codes_list = []
+        for item in coupon_codes:
+            coupon_codes_list.append(*item)
+        return coupon_codes_list
+
+
+
+
+
 

@@ -1,9 +1,9 @@
 import sys
-#sys.path.insert(0, '/home/anna/PycharmProjects/PythonProjects/woocommerce_api_testing')
+sys.path.insert(0, '/home/anna/PycharmProjects/PythonProjects/woocommerce_api_testing')
 
 import json
-from ..tools import request
-from ..tools import helpers
+from tools import request
+from tools import helpers
 
 
 rq = request.Request()
@@ -108,9 +108,6 @@ def test_verify_customer_in_db():
     assert customer_info['last_name'] == last_name, '"last_name" in response is not as expected. Expected: {}. Returned: {}.'.format(last_name, customer_info['last_name'])
     print('PASS TC2, customers endpoint, pos, verify a customer in db.')
 
-
-# test_create_customer()
-# test_verify_customer_in_db()
 
 
 

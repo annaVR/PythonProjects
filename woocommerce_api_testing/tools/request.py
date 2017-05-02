@@ -8,18 +8,18 @@ class Request():
         admin_consumer_secret = 'cs_83fea685b8d35aef74847024fc14636cfdb4121c'
 
         self.wcapi = API(
-            url = 'http://127.0.0.1/my_store',
-            consumer_key = admin_consumer_key,
-            consumer_secret = admin_consumer_secret,
-            version = 'v3')
+            url='http://127.0.0.1/my_store',
+            consumer_key=admin_consumer_key,
+            consumer_secret=admin_consumer_secret,
+            version='v2')
 
     def test_api(self):
         '''
 
         :return:
         '''
-        print (self.wcapi.get('').json())
-        print (self.wcapi.get('').status_code)
+        print(self.wcapi.get('').json())
+        print(self.wcapi.get('').status_code)
 
     def post(self, endpoint, data):
         '''
