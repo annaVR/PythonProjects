@@ -12,7 +12,7 @@ class DBConnect():
         :return:
         '''
         host = '127.0.0.1'
-        connection = pymysql.connect(host=host, port=3306, user='serega', password='foobar1', db=db)
+        connection = pymysql.connect(host=host, port=3306, user='', password='', db=db)
         return connection
 
     def select(self, db, query):

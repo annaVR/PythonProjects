@@ -4,8 +4,8 @@ class Request():
 
     def __init__(self):
 
-        admin_consumer_key = 'ck_4e5935f19c74e13c2ae54df112cc102038296de8'
-        admin_consumer_secret = 'cs_83fea685b8d35aef74847024fc14636cfdb4121c'
+        admin_consumer_key = ''
+        admin_consumer_secret = ''
 
         self.wcapi = API(
             url='http://127.0.0.1/my_store',
