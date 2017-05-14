@@ -1,5 +1,5 @@
 pip3 install woocommerce pymysql pytest
 
-fill the credentials:
+the cred:
 tools/request.py
 tools/dbconnect.py
