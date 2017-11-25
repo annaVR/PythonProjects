@@ -28,6 +28,21 @@ for j in lst:
         ind+= 1
 print(lst[min_ind])
 
+#second solution (latest)
+n = int(input())
+arr = list(map(int, input().split()))
+arr.sort(reverse=True)
+for i in range(1, len(arr)):
+    if arr[i] == arr[i - 1] and arr[i] > arr[i + 1]:
+        print(arr[i + 1])
+        break
+    elif arr[i] == arr[i - 1] and arr[i] == arr[i + 1]:
+        continue
+    else:
+        print(arr[i])
+        break
+
+
 
 
 

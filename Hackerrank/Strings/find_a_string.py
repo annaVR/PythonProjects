@@ -21,3 +21,18 @@ while True:
     if len(slic)< len(ls_sub): break
     start+= 1
 print(occ)
+
+print('Second solution:')
+def count_substring(string, sub_string):
+    string = string.rstrip()
+    sub_string = sub_string.rstrip()
+    if string.find(sub_string) == -1:
+        return 0
+    index = string.find(sub_string)
+    count = 1
+    while len(string) - (index + 1) >= len(sub_string):
+        if string[index + 1: index + 1 + len(sub_string)] == sub_string:
+            count += 1
+        index += 1
+    return count
+print(count_substring(st, sub_st))

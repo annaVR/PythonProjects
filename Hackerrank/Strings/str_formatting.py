@@ -20,3 +20,10 @@ for num in range(1, maxim + 1):
 print()
 for num in range(1, maxim + 1):
     print('{0:*>{width}} {0:*>{width}o} {0:*>{width}X} {0:*>{width}b}'.format(num, width=width))
+
+print('Solution #3:')
+width = 5
+for num in range(5,12):
+    for base in 'doXb':
+        print('{0:{width}{base}}'.format(num, base=base, width=width), end=' ')
+    print()
