@@ -1,0 +1,47 @@
+#stones and jewels
+S = 'anna'
+J = 'gn'
+
+no_duplicate_stone = []
+for stone in S:
+    if stone not in no_duplicate_stone:
+        no_duplicate_stone.append(stone)
+print(no_duplicate_stone)
+
+count = 0
+for stone in no_duplicate_stone:
+    if stone in J:
+        count += 1
+print(count)
+
+#morse
+print(ord('a'))
+print(ord('b'))
+morse = [".-","-...","-.-.","-..",".","..-.","--.",
+         "....","..",".---","-.-",".-..","--","-.",
+                 "---",".--.","--.-",".-.","...","-","..-",
+                 "...-",".--","-..-","-.--","--.."]
+
+words = ['gin', 'zen', 'gig', 'msg']
+
+in_morse = {''.join(morse[ord(c)-ord('a')] for c in 'gin')}
+print(in_morse)
+
+word_in_morse = {}
+words_in_morse = []
+for word in words:
+    for c in word:
+        index = ord(c) - ord('a')
+        letter_in_morse = ''.join(morse[index])
+        words_in_morse.append(letter_in_morse)
+print(words_in_morse)
+
+MORSE = [".-","-...","-.-.","-..",".","..-.","--.",
+                 "....","..",".---","-.-",".-..","--","-.",
+                 "---",".--.","--.-",".-.","...","-","..-",
+                 "...-",".--","-..-","-.--","--.."]
+seen = {"".join(MORSE[ord(c) - ord('a')] for c in word)
+    for word in words}
+print(seen, len(seen))
+for k, v in seen.items():
+    print(k, v)
