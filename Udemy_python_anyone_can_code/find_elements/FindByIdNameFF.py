@@ -14,5 +14,20 @@ class FindByIdName(object):
             print(element_id, element_name)
 
 
-ff = FindByIdName()
-ff.test()
+#ff = FindByIdName()
+#ff.test()
+
+class FindByIDNameChrome(object):
+
+    def test(self):
+
+        url = "https://letskodeit.teachable.com/p/practice"
+        driver = webdriver.Chrome()
+        driver.get(url)
+        element_by_id = driver.find_element_by_id('name')
+        element_by_name = driver.find_element_by_name('enter-name')
+        if element_by_id and element_by_name:
+            print('Success')
+
+chrome = FindByIDNameChrome()
+chrome.test()

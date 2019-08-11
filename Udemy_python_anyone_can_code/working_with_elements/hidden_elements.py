@@ -10,7 +10,7 @@ class HiddenElements(object):
     def test_letskodeit(self):
 
         url = 'https://letskodeit.teachable.com/p/practice'
-        driver = webdriver.Firefox()
+        driver = webdriver.Chrome()
         driver.maximize_window()
         driver.get(url)
         driver.implicitly_wait(3)
@@ -28,32 +28,28 @@ class HiddenElements(object):
 
     def test_expedia(self):
         url = "https://www.expedia.com/"
-        driver = webdriver.Firefox()
+        driver = webdriver.Chrome()
         driver.maximize_window()
         driver.get(url)
         driver.implicitly_wait(3)
 
-        driver.find_element(By.ID, "tab-flight-tab").click()
+        driver.find_element(By.XPATH, "//span[contains(text(),'Flights')]").click()
+
         driver.implicitly_wait(3)
-
-        element = driver.find_element(By.ID, "flight-children")
-        for i in range(2):
-
-            try:
-                drop_down = driver.find_element(By.ID, "flight-age-select-1")
-                options_list = driver.find_elements(By.XPATH, '//select[@id="flight-age-select-1"]/option')
-                length_options = len(options_list)
-                options = Select(drop_down)
-                options.select_by_value('6')
-                print('Success!')
-
-            except:
-                print('The element does not exist on the DOM')
-                flight_tab_options = Select(element)
-                flight_tab_options.select_by_value('1')
-                time.sleep(2)
+        buttons = driver.find_elements(By.XPATH, "//span[text()='Add Adult']//parent::button")
+        print("Button state: {}".format(buttons[0].is_displayed()))
+        try:
+            travelers = driver.find_element(By.XPATH, "//div[@id='traveler-selector-hp-flight']//ul[@class='menu-bar-inner']/li/button[@type='button']")
+            travelers.click()
+            time.sleep(3)
+        except:
+            print("Failed")
+        print("Button state: {}".format(buttons[0].is_displayed()))
+        buttons[0].click()
+        time.sleep(4)
         driver.quit()
 
 ff = HiddenElements()
-# ff.test_letskodeit()
+ff.test_letskodeit()
 ff.test_expedia()
+

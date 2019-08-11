@@ -36,5 +36,24 @@ class FindByLinkPartialLink(object):
             print(elem.text)
         print(count)
 
-ff = FindByLinkPartialLink()
-ff.test()
+#ff = FindByLinkPartialLink()
+#ff.test()
+
+class FindByClassTagChrome(object):
+
+    def test(self):
+        url = "https://letskodeit.teachable.com/p/practice"
+        driver = webdriver.Chrome()
+        driver.get(url)
+        elem_by_class = driver.find_element_by_class_name("displayed-class")
+        elements_by_tag_name = driver.find_elements_by_tag_name("a ")
+        if elem_by_class:
+            print('Success 1')
+        if elements_by_tag_name:
+            print('Success 2')
+            print(len(elements_by_tag_name))
+        for element in elements_by_tag_name:
+            print(element.text)
+        driver.quit()
+chrome = FindByClassTagChrome()
+chrome.test()

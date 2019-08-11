@@ -2,9 +2,12 @@
 *.log
 *.pyc
 *~
+
 .idea/*
 .cache/*
 *report*.html
 assets/*
+
+# Environments
 .venv
 venv/

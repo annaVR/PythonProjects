@@ -19,7 +19,12 @@ class Lemon(Fruit):
         self.size = size
         print('Actualy, I am not generic any more. I am a lemon.')
 
-    def 
+    def nutrition(self):
+        print(super(Lemon, self).nutrition())
+        print('On top of that nutrition, I will also need some more')
+
+    def color(self):
+        print('I am changing the color to deep yellow')
 
 fruit = Fruit()
 
@@ -27,3 +32,6 @@ print(fruit.fruit_shape())
 print(fruit.nutrition())
 
 lemon = Lemon()
+lemon.nutrition()
+lemon.color()
+

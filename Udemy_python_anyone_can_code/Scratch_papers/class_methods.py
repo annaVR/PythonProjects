@@ -36,6 +36,7 @@ class BengalTiger(Tiger):
 
         return (super(BengalTiger, self).roar(roar_times), self.name + ' Roar!!!!!'* roar_times)
 
+
 tiger_anya = Tiger(color='Red', age=5, name='Anya')
 print(tiger_anya.roar(roar_times=3))
 
@@ -44,3 +45,45 @@ print(bengal.roar())
 bengal2 = BengalTiger()
 print(bengal2.roar())
 print(BengalTiger.legs)
+print ('----------back to school 7/21/19-----------')
+
+# back to school 7/21/19
+
+class Motorcycle(object):
+
+    wheels = 4
+    headlights = 2
+
+    def __init__(self, make, color):
+        print('Created general mc')
+        self.make = make
+        self.color = color
+
+    def info(self):
+        print('Make: {}'.format(self.make))
+        print('Color: {}'.format(self.color))
+
+    def drive(self):
+        print('Started')
+
+    def stop(self):
+        print('Stopped')
+
+class SportMotorcycle(Motorcycle):
+
+    def __init__(self, make, color):
+        print('Created SportMc')
+        Motorcycle.__init__(self, make, color)
+
+    def drive(self):
+        super(SportMotorcycle, self).drive()
+        print('Started SportMC')
+
+mc1 = Motorcycle('Honda', 'Red')
+print(mc1.wheels)
+print(mc1.make, mc1.color)
+mc1.info()
+
+mc2 = SportMotorcycle('Acura', 'Blue')
+mc2.info()
+mc2.drive()

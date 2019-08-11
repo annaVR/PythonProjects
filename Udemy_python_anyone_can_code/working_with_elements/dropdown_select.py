@@ -60,6 +60,36 @@ class DropdownSelect():
         driver.quit()
 
 
-ff = DropdownSelect()
-ff.test_letskodeit()
-ff.test_expedia()
+#ff = DropdownSelect()
+#ff.test_letskodeit()
+#ff.test_expedia()
+
+
+class DropdownSelectChrome(object):
+
+    def test(self):
+        url = 'https://letskodeit.teachable.com/p/practice'
+        driver = webdriver.Chrome()
+        driver.maximize_window()
+        driver.get(url)
+        driver.implicitly_wait(5)
+
+        dropdown = driver.find_element(By.XPATH, "//select[@id='carselect']")
+        select = Select(dropdown)
+
+        select.select_by_index(1)
+        time.sleep(3)
+        select.select_by_value('honda')
+        time.sleep(3)
+        select.select_by_visible_text('BMW')
+        time.sleep(3)
+
+        options = select.options
+        for index in range(0, len(options)):
+            element = select.select_by_index(index)
+            time.sleep(3)
+
+        driver.quit()
+
+ch = DropdownSelectChrome()
+ch.test()

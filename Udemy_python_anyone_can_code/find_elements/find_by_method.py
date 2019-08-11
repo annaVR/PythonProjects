@@ -1,4 +1,5 @@
 __author__ = 'anna'
+import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -38,5 +39,37 @@ class BYDemo(object):
 
         driver.quit()
 
-ff = BYDemo()
-ff.test()
+#ff = BYDemo()
+#ff.test()
+
+class ByDemoChrome(object):
+
+    def test(self):
+        url = "https://letskodeit.teachable.com/p/practice"
+        driver = webdriver.Chrome()
+        driver.get(url)
+        elem_by_id = driver.find_element(By.ID, 'name')
+        elem_by_id.send_keys('Anna')
+        elem_by_xpath = driver.find_element(By.XPATH, "//input[@id='displayed-text']")
+        elements_by_class_name = driver.find_elements(By.CLASS_NAME, 'inputs')
+        if elem_by_xpath:
+            print("Element by XPath found")
+        time.sleep(5)
+        print("Element count: {}".format(elements_by_class_name.__len__()))
+        count = 0
+        for element in elements_by_class_name:
+            count += 1
+            print(count, element, element.text)
+        elements_by_tag = driver.find_elements(By.TAG_NAME, 'legend')
+        count = 0
+        for element in elements_by_tag:
+            count += 1
+            print(count, element.text)
+
+        driver.quit()
+
+chrome = ByDemoChrome()
+chrome.test()
+
+
+

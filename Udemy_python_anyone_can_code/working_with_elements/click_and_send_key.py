@@ -59,8 +59,31 @@ class ClickAndSendKeys(object):
         time.sleep(3)
         driver.quit()
 
-ff = ClickAndSendKeys()
-ff.test()
-ff.another_test()
+#ff = ClickAndSendKeys()
+#ff.test()
+#ff.another_test()
+
+class ClickSendKeyChrome(object):
+
+    def login(self):
+        url = 'https://letskodeit.teachable.com/'
+        driver = webdriver.Chrome()
+        driver.maximize_window()
+        driver.get(url)
+
+        login_link = driver.find_element(By.XPATH, "//a[contains(text(),'Login')]")
+        login_link.click()
+        driver.implicitly_wait(10)
+        user_email = driver.find_element(By.XPATH, "//input[@id='user_email']")
+        user_email.send_keys("test")
+        user_pw = driver.find_element(By.XPATH, "//input[@id='user_password']")
+        user_pw.send_keys("test")
+        driver.find_element(By.XPATH, "//input[@value='Log In']").click()
+        time.sleep(7)
+        driver.quit()
+
+chrome = ClickSendKeyChrome()
+chrome.login()
+
 
 

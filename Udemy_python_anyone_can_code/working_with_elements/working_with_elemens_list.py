@@ -7,7 +7,6 @@ import time
 class WorkingWithElementsList():
 
     def test(self):
-
         url = 'https://letskodeit.teachable.com/p/practice'
         driver = webdriver.Firefox()
         driver.maximize_window()
@@ -33,5 +32,25 @@ class WorkingWithElementsList():
                 time.sleep(3)
         driver.quit()
 
-ff = WorkingWithElementsList()
-ff.test()
+#ff = WorkingWithElementsList()
+#ff.test()
+
+class WorkingWithElementsListChrome(object):
+
+    def test(self):
+        url = 'https://letskodeit.teachable.com/p/practice'
+        driver = webdriver.Chrome()
+        driver.maximize_window()
+        driver.get(url)
+
+        list_of_checkboxes = driver.find_elements(By.XPATH, "//input[@name='cars' and @type='checkbox']")
+
+        for checkbox in list_of_checkboxes:
+            checkbox.click()
+            print(checkbox.is_selected())
+        for checkbox in list_of_checkboxes:
+            checkbox.click()
+            print(checkbox.is_selected())
+
+ch = WorkingWithElementsListChrome()
+ch.test()

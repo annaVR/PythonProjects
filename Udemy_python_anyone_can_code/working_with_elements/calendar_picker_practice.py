@@ -15,7 +15,7 @@ class ExplictWaitDemo():
 
     def test(self):
         url = 'http://www.expedia.com'
-        driver = webdriver.Firefox()
+        driver = webdriver.Chrome()
         driver.maximize_window()
         driver.get(url)
         driver.implicitly_wait(4)
@@ -28,13 +28,13 @@ class ExplictWaitDemo():
 
         driver.find_element(By.ID, "flight-departing-hp-flight").click()
         print('Just some exercise in XPath:')
-        month_calendar = driver.find_elements(By.XPATH, "//caption[contains(text(), 'Mar 2017')]/parent::table//button")
-
-        print('The number or days: {}'.format(len(month_calendar)))
-        for element in month_calendar:
-            print(element.text)
+        valid_dates_current_month = driver.find_elements_by_xpath("//div[@class='datepicker-cal-month'][1"
+                                                                  "]//button[@class='datepicker-cal-date']")
+        print('The number or days: {}'.format(len(valid_dates_current_month)))
+        for element in valid_dates_current_month:
+            print(element.get_attribute("data-day"))
         time.sleep(2)
-        driver.quit()
+        #driver.quit()
 
-ff = ExplictWaitDemo()
-ff.test()
+ch = ExplictWaitDemo()
+ch.test()

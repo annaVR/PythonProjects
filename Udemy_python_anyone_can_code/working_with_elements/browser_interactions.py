@@ -1,6 +1,7 @@
 __author__ = 'anna'
 
 from selenium import webdriver
+import time
 
 class BrowserInteractions(object):
 
@@ -32,5 +33,36 @@ class BrowserInteractions(object):
 
         driver.quit()
 
-ff = BrowserInteractions()
-ff.test()
+#ff = BrowserInteractions()
+#ff.test()
+
+
+class InterractionsChrome(object):
+
+    def test(self):
+        url = 'https://letskodeit.teachable.com/p/practice'
+        driver = webdriver.Chrome()
+        driver.maximize_window()
+        driver.get(url)
+        time.sleep(3)
+
+        print('Page title: {}'.format(driver.title))
+        print('Url: {}'.format(driver.current_url))
+
+        driver.refresh()
+        time.sleep(3)
+        driver.get(driver.current_url)
+        print("Open another URL")
+        driver.get('https://google.com')
+        print('Url: {}'.format(driver.current_url))
+        time.sleep(3)
+        driver.back()
+        time.sleep(3)
+        driver.forward()
+        page_source = driver.page_source
+        driver.quit()
+
+chrome = InterractionsChrome()
+chrome.test()
+
+
