@@ -4,7 +4,7 @@ from selenium import webdriver
 import time
 
 def execute_java_script():
-    driver = webdriver.Firefox()
+    driver = webdriver.Chrome()
     driver.execute_script('window.location = "https://letskodeit.teachable.com/p/practice";')
     driver.implicitly_wait(3)
 

@@ -12,9 +12,15 @@ class AssertDemo(unittest.TestCase):
 
     def test_assert_equal(self):
         a = 1
-        b = 2
+        b = 1
 
         self.assertEqual(a, b, msg='a is not equal to b')
+
+    def test_assertGreater(self):
+        a = 36
+        b = 35
+
+        self.assertGreater(a, b, msg="a is not greater then b")
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

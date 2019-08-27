@@ -8,7 +8,8 @@ from assert_demo import AssertDemo
 tc1 = unittest.TestLoader().loadTestsFromTestCase(TestCaseDemo1)
 tc2 = unittest.TestLoader().loadTestsFromTestCase(TestCaseDemo2)
 tc3 = unittest.TestLoader().loadTestsFromTestCase(AssertDemo)
+tc4 = unittest.TestLoader().loadTestsFromTestCase(TestCaseDemo1)
 
-test_suit = unittest.TestSuite([tc1, tc2, tc3])
+test_suit = unittest.TestSuite([tc1, tc2, tc3,tc1,tc2,tc3])
 
 unittest.TextTestRunner(verbosity=2).run(test_suit)

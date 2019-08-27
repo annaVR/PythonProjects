@@ -24,4 +24,11 @@ def switch_to_javascript_alert():
     alert2.dismiss()
     time.sleep(2)
     driver.quit()
+
+
+    alert3 = driver.switch_to.alert
+    alert3.accept()
+    alert3.dismiss()
+
+    
 switch_to_javascript_alert()

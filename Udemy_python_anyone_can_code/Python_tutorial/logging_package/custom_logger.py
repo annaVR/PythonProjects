@@ -10,14 +10,15 @@ def CustomLogger(log_level):
     # for item in stack:
     #     print(item)
 
-    #gets the name og the class/ method from where this method is called
+    #gets the name of the class/ method from where this method is called
     logger_name = inspect.stack()[1][3]
     logger = logging.getLogger(logger_name)
     #by default, log all messages
     logger.setLevel(logging.DEBUG)
 
     file_handler = logging.FileHandler(filename='{}.log'.format(logger_name), mode='w')
-    file_handler.setLevel(log_level)
+    file_handler.setLevel(log_level) # Coming as a parameter of CustomLogger function.
+    # this will override log level provided earlier in logger.setLevel(logging.DEBUG)
 
     formatter = logging.Formatter('%(asctime)s: %(name)s: %(levelname)s: %(message)s',
                                   datefmt='%m/%d/%Y %I:%M:%S %p')

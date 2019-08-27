@@ -6,7 +6,7 @@ import time
 import random
 
 def switch_to_window():
-    driver = webdriver.Firefox()
+    driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://letskodeit.teachable.com/p/practice")
     driver.implicitly_wait(3)
@@ -34,8 +34,8 @@ def switch_to_window():
     driver.quit()
 
 def switch_to_window_random():
-    driver = webdriver.Firefox()
-    driver.maximize_window()
+    driver = webdriver.Chrome()
+    #driver.maximize_window()
     driver.get("https://letskodeit.teachable.com/p/practice")
     driver.implicitly_wait(3)
 
@@ -67,7 +67,6 @@ def switch_to_window_random():
     print(handles)
 
     driver.quit()
-
 
 # switch_to_window()
 switch_to_window_random()

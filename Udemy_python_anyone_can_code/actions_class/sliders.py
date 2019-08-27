@@ -7,9 +7,8 @@ from selenium.webdriver import ActionChains
 import time
 
 def slider():
-    driver_location = '/Users/anna/bin/chromedriver'
-    os.environ['webdriver.chrome.driver'] = driver_location
-    driver = webdriver.Chrome(driver_location)
+
+    driver = webdriver.Chrome()
 
     driver.maximize_window()
     driver.get("https://jqueryui.com/slider/")

@@ -5,8 +5,9 @@ import unittest
 class TestCaseDemo1(unittest.TestCase):
 
     def setUp(self):
-        print('run once before every test')
+        print('Run once before every test')
 
+    #tests methods should start with word 'test'
     def test_method1(self):
         print('Running method1')
 
@@ -14,7 +15,7 @@ class TestCaseDemo1(unittest.TestCase):
         print('Running method2')
 
     def tearDown(self):
-        print('run once after every test')
+        print('Run once after every test')
 
 
 if __name__ =='__main__':

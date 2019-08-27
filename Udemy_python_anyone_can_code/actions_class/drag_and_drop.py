@@ -7,11 +7,10 @@ from selenium.webdriver import ActionChains
 import time
 
 def drag_and_drop():
-    driver_location = '/Users/anna/bin/chromedriver'
-    os.environ['webdriver.chrome.driver'] = driver_location
-    driver = webdriver.Chrome(driver_location)
 
-    driver.maximize_window()
+    driver = webdriver.Chrome()
+
+    #driver.maximize_window()
     driver.get("https://jqueryui.com/droppable/")
     driver.implicitly_wait(3)
 

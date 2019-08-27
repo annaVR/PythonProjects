@@ -11,10 +11,12 @@ def logger_demo_console():
 
     #handler is responsible for the output and pass it to the formatter
     #here is output to the console
-    console_handler = logging.StreamHandler()
-    console_handler.setLevel(logging.DEBUG)
+    console_handler = logging.StreamHandler() #print to the console
+    console_handler.setLevel(logging.INFO)
 
-    #formatter will take the output from handler and format it in the way we want and output it
+    #formatter will take the output from handler and format it in ..
+    #.. the way we want and then return it back to the handler so it could be printed
+    # %(name)s - is to add logger name to the format
     formatter = logging.Formatter('%(asctime)s: %(name)s: %(levelname)s: %(message)s',
                                   datefmt='%m/%d/%Y %I:%M:%S %p')
 

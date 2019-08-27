@@ -1,7 +1,7 @@
 __author__ = 'anna'
 
 import logging
-from . import custom_logger as cl
+import custom_logger as cl
 
 class LoggingDemo2():
 
