@@ -8,3 +8,6 @@ class SomeClassToTest():
 
     def sum_numbers(self, a, b):
         return a + b + self.value
+
+    def multiply_numbers(self, a):
+        return a * self.value

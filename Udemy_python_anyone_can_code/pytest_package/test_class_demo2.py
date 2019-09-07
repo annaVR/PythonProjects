@@ -10,7 +10,7 @@ class TestClassDemo2():
     #create class_level fixture to prepare to run all tests: here to make an instance of a class we are testing and
     #make it available to every method
     @pytest.fixture(autouse=True)
-    def ClassSetup(self, module_set_up_level_to_test_a_class):
+    def ClassSetup(self, module_set_up_level_to_test_a_class): # need to provide fixture to the class here because we need to get the "value" returned by request.cls.value
         self.abc = SomeClassToTest(self.value)
 
     def test_methodA(self):

@@ -1,7 +1,7 @@
 __author__ = 'anna'
 
-# we do not have to do anything, but pip3 install pytest-html and when we run the file we pass the name
-# of the file where we want to save the html report to the kwarg --html=filepath.html
+# pip3 install pytest-html and when we run the file via py.test we pass the name
+# of the file where we want to save the html report to the kwarg --html=filepath.html. By default it saves in the module folder
 
 import pytest
 from .class_to_test import SomeClassToTest

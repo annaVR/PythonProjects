@@ -14,7 +14,7 @@ def test_run_order_methodB(module_set_up, method_set_up):
 def test_run_order_methodC(module_set_up, method_set_up):
     print('Running method C')
 
-@pytest.mark.last
+@pytest.mark.run("last")
 def test_run_order_methodD(module_set_up, method_set_up):
     print('Running method D')
 
