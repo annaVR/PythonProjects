@@ -6,7 +6,7 @@ __author__ = 'anna'
 import pytest
 from .class_to_test import SomeClassToTest
 
-
+#use fixtures defined on conftest.py for the whole class
 @pytest.mark.usefixtures('module_set_up_level_to_test_a_class', 'method_set_up')
 class TestReportingDemo():
 
